@@ -16,8 +16,18 @@ public class GameManager : MonoBehaviour
     [Header("GameOver Elements")]
     public GameObject gameOverPanel;
 
+    [Header("Sounds")]
+    public AudioClip[] sliceSounds;
+
+    public AudioClip[] bombSound;
+
+    private AudioSource audioSource;
+    private AudioSource audioSource2;
+
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource2 = GetComponent<AudioSource>();
         gameOverPanel.SetActive(false);
         GetHighscore();
         PlayerPrefs.SetInt("Highscore", 0);
@@ -44,10 +54,11 @@ public class GameManager : MonoBehaviour
 
     public void OnBombHit()
     {
-
+        PlayBombSound();
         Time.timeScale = 0;
         gameOverPanel.SetActive(true);
         Debug.Log("Bomb Hit");
+        
     }
 
     public void RestartGame()
@@ -65,5 +76,17 @@ public class GameManager : MonoBehaviour
         GetHighscore();
 
         Time.timeScale = 1;
+    }
+
+    public void PlayRandomSliceSound()
+    {
+        AudioClip randomSound = sliceSounds[Random.Range(0, sliceSounds.Length)];
+        audioSource.PlayOneShot(randomSound);
+    }
+
+    public void PlayBombSound()
+    {
+        AudioClip randomSound2 = bombSound[Random.Range(0, bombSound.Length)];
+        audioSource2.PlayOneShot(randomSound2);
     }
 }

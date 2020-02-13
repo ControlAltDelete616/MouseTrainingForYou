@@ -13,6 +13,8 @@ public class Fruit : MonoBehaviour
 
         Rigidbody[] rbOnSliced = inst.transform.GetComponentsInChildren<Rigidbody>();
 
+        FindObjectOfType<GameManager>().PlayRandomSliceSound();
+
         foreach (Rigidbody r in rbOnSliced)
         {
             r.transform.rotation = Random.rotation;
