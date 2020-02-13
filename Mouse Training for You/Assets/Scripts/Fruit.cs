@@ -18,16 +18,29 @@ public class Fruit : MonoBehaviour
             r.transform.rotation = Random.rotation;
             r.AddExplosionForce(Random.Range(500, 1000), transform.position, explosionforce);
         }
-
+        Destroy(inst.gameObject, 4);
         Destroy(gameObject);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        Blade b = collision.GetComponent<Blade>();
+
+        if (!b)
+        {
+            return;
+        }
+        CreateSlicedFruit();
+    }
+
+
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             CreateSlicedFruit();
         }
-    }
+    }*/
 }
