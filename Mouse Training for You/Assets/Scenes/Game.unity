@@ -520,7 +520,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.29784137, g: 0.3018868, b: 0.26628694, a: 0}
+  m_BackGroundColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1431,7 +1431,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 85aafbf6cd5984ba1ae0e4efe4bd5a0e, type: 3}
   - {fileID: 8300000, guid: 1bd134079a8a24f308ed392d924ea3e8, type: 3}
   bombSound:
-  - {fileID: 8300000, guid: 6de0c2d6a7804447391cb0194f2c3c9d, type: 3}
+  - {fileID: 8300000, guid: 371c8fe7dbf754c66b5e7fc0e0fa8e1c, type: 3}
 --- !u!4 &1438726724
 Transform:
   m_ObjectHideFlags: 0
