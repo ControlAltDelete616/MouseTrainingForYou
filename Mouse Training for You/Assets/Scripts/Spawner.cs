@@ -56,7 +56,7 @@ public class Spawner : MonoBehaviour
 
             Debug.Log("Frucht wurde erzeugt!");
 
-            Destroy(fruit, 5);
+            Destroy(fruit, 12);
         }
     }
 

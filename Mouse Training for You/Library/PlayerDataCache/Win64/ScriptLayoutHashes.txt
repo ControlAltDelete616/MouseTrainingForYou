@@ -2,7 +2,16 @@ Win64
 PlayerPath?
 D:/Daten/OneDrive - Verein Sunshine for You/Desktop/MouseTrainingForYou/Mouse Training for You.exe
 SceneListBegin?
-Assets/Scenes/Game.unity
+Assets/Scenes/StartMenu.unity
+Assets/Scenes/Level1.unity
+Assets/Scenes/ScoreScreen.unity
+Assets/Scenes/Level2.unity
+Assets/Scenes/ScoreScreen2.unity
+Assets/Scenes/Level3.unity
+Assets/Scenes/ScoreScreen3.unity
+Assets/Scenes/Level4.unity
+Assets/Scenes/ScoreScreen4.unity
+Assets/Scenes/Level5.unity
 SceneListEnd?
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 77c21079ace8d76ce6e941d3dabbfe6e Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -119,7 +128,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
-12384e4cb81c396aa3c0ca2321bcc502 Assembly-CSharp.dll:.GameManager
+90668f9c434594ae962f7ed2b0a6950f Assembly-CSharp.dll:.GameManager
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -161,3 +170,4 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Bomb
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ButtonChangeLevel

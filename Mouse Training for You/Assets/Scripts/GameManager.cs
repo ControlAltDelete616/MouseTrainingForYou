@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+    public int FinalScore;
 
     [Header("Score Elements")]
     public int score;
@@ -88,5 +91,15 @@ public class GameManager : MonoBehaviour
     {
         AudioClip randomSound2 = bombSound[Random.Range(0, bombSound.Length)];
         audioSource2.PlayOneShot(randomSound2);
+    }
+
+    void Update()
+    {
+        if (score == FinalScore)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        }
+
     }
 }
